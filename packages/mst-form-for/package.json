@@ -1,0 +1,36 @@
+{
+  "name": "mst-form-for",
+  "description": "form-for state management with mobx-state-tree",
+  "keywords": [
+    "react-component",
+    "react",
+    "reactjs",
+    "form",
+    "forms",
+    "simple-form",
+    "form-for",
+    "mobx",
+    "reactive",
+    "mobx-state-tree",
+    "mst"
+  ],
+  "version": "0.0.0",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "umd:main": "umd/index.min.js",
+  "files": [
+    "cjs",
+    "es"
+  ],
+  "peerDependencies": {
+    "form-for": "^1.0.0",
+    "mobx-react": "^3.5.0 || ^4.0.0",
+    "mobx-state-tree": "^1.3.0",
+    "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/form-for/form-for",
+  "bugs": "https://github.com/form-for/form-for/issues",
+  "repository": "form-for/form-for",
+  "author": "Pedro Moreira <pedsmoreira@gmail.com>"
+}
