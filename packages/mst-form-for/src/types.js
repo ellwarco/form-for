@@ -17,6 +17,11 @@ const types = {
 
     const model = mstTypes.model(filteredTypes);
     model.schema = schema;
+    model.actions(self => ({
+      formForChange: function(name, value) {
+        self[name] = value;
+      }
+    }));
 
     return model;
   }

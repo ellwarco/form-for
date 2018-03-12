@@ -6,7 +6,7 @@ import { FieldGroup as BaseFieldGroup } from 'form-for';
 
 class FieldGroup extends BaseFieldGroup {
   onChange(name: string, value: any, index?: any) {
-    applyAction(this.props.for, self => (self[name] = value));
+    this.props.for.formForChange(name, value);
     this.dispatchFormChange();
   }
 }
