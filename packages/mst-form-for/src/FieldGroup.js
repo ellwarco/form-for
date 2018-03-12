@@ -2,12 +2,11 @@
 
 import { applyAction } from 'mobx-state-tree';
 import { observer } from 'mobx-react';
-import { FieldGroup as BaseFieldGroup } from 'form-for';
+import { FieldGroup as MobxFieldGroup } from 'mobx-form-for';
 
-class FieldGroup extends BaseFieldGroup {
-  onChange(name: string, value: any, index?: any) {
+class FieldGroup extends MobxFieldGroup {
+  mutate(name: string, value: any, index?: any) {
     this.props.for.formForChange(name, value);
-    this.dispatchFormChange();
   }
 }
 

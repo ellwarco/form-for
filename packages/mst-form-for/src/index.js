@@ -1,6 +1,7 @@
 // @flow
 
-import { Field, Form } from 'mobx-form-for';
+import { Field } from 'mobx-form-for';
+import Form from './Form';
 import FieldGroup from './FieldGroup';
 import types from './types';
 
